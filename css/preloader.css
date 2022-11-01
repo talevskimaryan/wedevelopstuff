@@ -1,0 +1,60 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  z-index: 99;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loaded {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.loader img {
+  width: 100px;
+  height: 100px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 20;
+}
+
+.loader h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 20px;
+  opacity: 0.75;
+}
+
+.loader h1 span {
+  font-weight: 800;
+}
+
+.loader p {
+  margin-top: 50px;
+  opacity: 0.5;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 20;
+}
+
+@keyframes example {
+  0% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}

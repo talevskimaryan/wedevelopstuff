@@ -1,0 +1,38 @@
+div#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 0px !important;
+}
+
+h3 {
+  text-align: center;
+  width: 100%;
+  color: var(--accent-color);
+  font-size: 2rem;
+  width: 80%;
+}
+
+button {
+  padding: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: var(--transparent-card);
+  border: 3px solid var(--border-color);
+  font-size: 1rem;
+  color: var(--contrast-color);
+  font-weight: 500;
+}
+
+div#content a {
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+button:hover { 
+    border: 3px solid var(--accent-color);
+    scale: 1.1;
+}

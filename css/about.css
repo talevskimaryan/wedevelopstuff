@@ -1,0 +1,162 @@
+nav.navbar li a.about {
+  color: var(--accent-color);
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+h3 {
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+p.title {
+  font-weight: 600;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #73737335;
+}
+
+p {
+  font-size: 1rem;
+}
+
+section {
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+section div#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+div#wrapper-link {
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  min-width: 250px;
+  width: 100%;
+}
+
+section div.card {
+  background-color: var(--theme-color);
+  min-height: 250px;
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: var(--border-color) 0px 0px 0px 3px;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+  background-color: var(--transparent-card);
+  padding: 20px;
+  filter: grayscale(25%);
+  transition: 0.2s ease-in-out;
+}
+
+section div.card:hover {
+  scale: 1.05;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  box-shadow: var(--accent-color) 0px 0px 0px 7px;
+  transition: 0.2s ease-in-out;
+}
+
+.card img {
+  width: 30%;
+  margin-bottom: 15px;
+}
+
+img#social {
+  width: 50px;
+  margin-left: 15px;
+}
+
+#team-mate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card ul li {
+  opacity: 0.75;
+  margin-left: 15px;
+}
+
+.card ul li:hover {
+  opacity: 1;
+  font-weight: 700;
+}
+
+#spacer {
+  width: 30px;
+  height: 50px;
+}
+
+#top-spacer {
+  height: 50px;
+}
+
+#card-two {
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 710px) {
+  section {
+    padding-bottom: 100px;
+  }
+  #card-two {
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .card ul li {
+    font-size: 1.25rem;
+  }
+
+  section div#wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: flex-start;
+  }
+
+  section div.card {
+    width: 100%;
+    min-height: 300px;
+    margin: 0 25px;
+    padding: 40px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  section div#wrapper {
+    width: fit-content;
+  }
+
+  section div.card {
+    width: 400px;
+  }
+}
